@@ -3,7 +3,7 @@ const url = "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=
 
 const resultsContainer = document.querySelector(".results");
 const messageBox = document.querySelector(".message-box");
-const message = showMessage();
+
 
 async function makeApiCall() {
     try {
@@ -13,7 +13,6 @@ async function makeApiCall() {
 
         const data = result.results;
 
-        messageBox.innerHTML = message;
 
         resultsContainer.innerHTML = "";
 
